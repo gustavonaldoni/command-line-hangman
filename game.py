@@ -34,7 +34,7 @@ def get_last_formatted_word(real_word, new_formatted_word, user_choice):
     return "".join(new_formatted_word)
 
 def has_user_lost(user_chances):
-    if user_chances == 0:
+    if user_chances <= 0:
         return True
     
     return False
