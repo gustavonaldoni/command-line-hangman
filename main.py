@@ -5,6 +5,7 @@ from messages.lose import show_lose_message
 from messages.win import show_win_message
 from messages.show_info import show_information
 from messages.print_meanings import print_meanings
+from messages.initial_message import show_inital_message
 from playsound import playsound
 from PyDictionary import PyDictionary
 
@@ -24,6 +25,8 @@ def main():
     last_formatted_word = None
 
     game_over = False
+
+    show_inital_message('Naldoni', 'NSS')
 
     while not game_over:
         print()
